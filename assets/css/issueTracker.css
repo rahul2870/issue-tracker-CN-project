@@ -1,0 +1,64 @@
+main {
+    margin: 0;
+    background-color: #0e6f9c;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.mainProject {
+    padding: 20px 0;
+    margin: 20px 50px;
+}
+
+.project {
+    margin: 10px;
+    padding: 20px;
+    min-width: 200px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: whitesmoke;
+    background-color: #143864;
+    cursor: pointer;
+    border-width: 2px 2px;
+    box-shadow: 0px 0px 3px rgba(197, 197, 197, 0.342);
+    border-radius: 0.2em;
+}
+
+.project h1 {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.project p {
+    text-align: right;
+}
+
+#addProject,
+#noProject {
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    margin-left: 30px;
+    font-size: 20px;
+    background-color: #143864;
+    box-shadow: none;
+    box-shadow: 0 0 2px #777;
+    color: #ffffff;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: a;
+}
+
+
+#addProject:hover {
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    transform: scale(1.01);
+}

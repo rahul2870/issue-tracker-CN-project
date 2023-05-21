@@ -1,0 +1,29 @@
+.navHeader {
+    width: 100vw;
+    margin: 0;
+    background-color: 	#0e6f9c;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerSpan {
+    margin: 0;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.headerSpan:active,
+.headerSpan:hover {
+    margin: 0;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navHeader .btn{
+    font-weight: 500;
+    font-size: 21px;
+    padding: 10px 23px;
+}

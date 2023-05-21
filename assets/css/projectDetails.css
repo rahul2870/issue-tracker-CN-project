@@ -1,0 +1,94 @@
+.projectDetailsMain {
+    margin: 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectDetailsMain {
+    padding: 10px 0;
+}
+
+.projectDetailsDiv {
+    margin: 10px;
+    padding: 25px;
+    width: 80%;
+    background-color: #845EC2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.5rem;
+
+    transition: all 0.25s ease-in-out;
+}
+
+.projectDetailsDiv h1 {
+    font-size: 2rem;
+}
+
+.projectDetailsDiv p {
+    font-size: 1.5rem;
+}
+
+.projectDetailsDiv:hover {
+    transform: scale(1.025);
+    box-shadow: 0 0 10px 2.5px black;
+}
+
+#filter {
+    padding: 2rem 100px 20px 0px;
+}
+
+#navbar {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 0.5rem;
+}
+
+#navbar button {
+    margin-left: 60px;
+    padding: 3px 24px;
+}
+
+#navbar label {
+    color: #353935;
+}
+
+#bugBox {
+    padding: 20px 0;
+    background-image: linear-gradient(to right, #051937, #002265, #002894, #0027c1, #1b12eb);
+    border-radius: 0.5rem;
+}
+
+#bugBox #bugfound i {
+    color: red;
+}
+
+#bugBox h1 {
+    color: #ffffff;
+}
+
+#bugBox #nobug i {
+    color: green;
+}
+
+#bugBox h1 {
+    color: #fafafa;
+}
+
+#bugBox div {
+    width: 500px;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+    padding: 5px;
+}
