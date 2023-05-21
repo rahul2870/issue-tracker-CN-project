@@ -1,93 +1,56 @@
-#IssueTracker
-A full stack app, which helps to track issues/bugs for the Project.
-Hoisted Link :https://soumyasri546-github-io-project.onrender.com
-
-
-### Description
+# Issue Tracker
 
 A full stack app, which helps to track issues/bugs for the Project.
 
+## Hosted Link
 
-### Tech Stack
+[https://issue-tracker-cn.onrender.com/](https://issue-tracker-cn.onrender.com/)
+
+## Description
+
+A full stack app, which helps to track issues/bugs for the Project.
+
+## Tech Stack
 
 Nodejs , Express, Mongodb , EJS , javaScript , html, css
 
-### How to setup the project on local system
+## How to setup the project on local system
 
-  1. Clone this project
-  2. Start by installing npm if you don't have it already.
-  3. Navigate to Project Directory by cd project Name
+1. Clone this project
+2. Start by installing npm if you don't have it already.
+3. Navigate to the project directory by running the following command:
 
-After reaching the project directory you have to run the following the command.
-   ```` 
-        npm install 
-        node index.js
-   ```
+   ```bash
+   cd project-name
+Install the dependencies:
 
-### Features
-  
-  
-  # HomePage 
-  A list of projects will be displayed.A button will be provided to create a new project. Upon the creation of a new project, it will be added to the list.
+bash
+Copy code
+npm install
+Start the application:
+node index.js
 
-  #CreateProjectPage
-  The following fields will be accepted to create a project:
+## Features
+Home Page
+A list of projects will be displayed. A button will be provided to create a new project. Upon the creation of a new project, it will be added to the list.
 
-   Name
-   Description
-   Author
+Create Project Page
+The following fields will be accepted to create a project:
 
-  #ProjectDetailsPage
-  Upon clicking on a project on the home page, the user will be redirected to the Project Detail Page, where they will be able to view bugs related to that project. The following actions can be performed by the user on this page:
+Name
+Description
+Author
+Project Details Page
+Upon clicking on a project on the home page, the user will be redirected to the Project Detail Page, where they will be able to view bugs related to that project. The following actions can be performed by the user on this page:
 
-   Multiple labels can be filtered by (i.e., the user can filter by 2 or more labels simultaneously).
-   Filtering by author is possible.
-   Title and description can be searched by.
-   A button will be provided to create an issue.
+Multiple labels can be filtered by (i.e., the user can filter by 2 or more labels simultaneously).
+Filtering by author is possible.
+Title and description can be searched by.
+A button will be provided to create an issue.
+Create Issue Page
+The user will be able to create an issue for a project on the Create Issue Page. The following fields will be accepted:
 
-   #CreateIssuePage
-   The user will be able to create an issue for a project on the Create Issue Page. The following fields will be accepted:
-
-   Title
-   Description
-   Author
-
-### Folder Structure
-
-```
-IssueTracker
-    |                               |-->createProject.css
-    | --->assets---->|--->css------>|-->footer.css
-    |                               |-->header.css
-    |                               |-->issueTracker.css
-    |                               |-->layout.css
-    |                               |-->projectDetails.css
-    |--->controller-->|-->issuecontroller.js
-    |                       |
-    |database--->config---->|--->mongodb.js
-    |                       |
-    |
-    |                  
-    |
-    |              
-    |               |
-    |--->route---->|-->index.js
-    |               |-->issueTracker.js
-    |               |
-    |
-    |              |--->_header.ejs
-    |              |---> _footer.ejs
-    |              |---> admicreateissue.ejs
-    |              |---> createProject.ejs
-    |--->views---->|--->issueTracker.ejs
-    |              |--->layout.ejs
-    |              |--->projectDetails.ejs
-    |              
-    |
-    |-->node_modules
-    |-->.gitignore
-    |--> index.js
-    |--> package-lock.json
-    |-->package.json
-    
-    ````
+Title
+Description
+Author
+You can customize and enhance this template further by adding more sections,
