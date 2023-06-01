@@ -4,7 +4,7 @@ A full stack app, which helps to track issues/bugs for the Project.
 
 ## Hosted Link
 
-[https://issue-tracker-cn.onrender.com/](https://issue-tracker-cn.onrender.com/)
+[https://issue-tracker-cn-project.vercel.app/issueTracker](https://issue-tracker-cn-project.vercel.app/issueTracker)
 
 ## Description
 
