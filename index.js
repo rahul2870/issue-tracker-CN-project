@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const router = require('./route')
 const expressLayouts = require('express-ejs-layouts');
+const path = require('path');
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
@@ -18,6 +19,7 @@ app.use('/', router)
 
 // set up the view engine
 app.set('view engine', 'ejs');
-app.set('views', './views');
+// app.set('views', './views');
+app.set('views', path.join(__dirname, './views'));
 
-app.listen(PORT, ()=>{console.log("connected to server : "+ PORT) })
+app.listen(PORT, () => { console.log("connected to server : " + PORT) })
