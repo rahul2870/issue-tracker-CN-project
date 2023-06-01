@@ -49,12 +49,17 @@ function filterBy(filter, projectDetails) {
 }
 
 module.exports.issueTrackerPage = async (req, res) => {
-    const collection = await mongoDB();
-    const addedProject = await collection.find({ id: 'addedProject' }).toArray();
-    return res.render('issueTracker', {
-        title: "Issue Tracker",
-        addedProject
-    })
+    try {
+        const collection = await mongoDB();
+        const addedProject = await collection.find({ id: 'addedProject' }).toArray();
+        return res.render('issueTracker', {
+            title: "Issue Tracker",
+            addedProject
+        })
+    } catch (error) {
+        console.log("error : ", error);
+        return res.json({ "error": "error" })
+    }
 }
 
 module.exports.createProject = (req, res) => {
