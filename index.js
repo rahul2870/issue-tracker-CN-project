@@ -8,7 +8,9 @@ const path = require('path');
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-app.use(express.static('./assets'));
+// app.use(express.static('./assets'));
+// app.use(express.static(path.join(__dirname, './assests')));
+app.use('/assets/css', express.static(path.join(__dirname, 'assets/css')));
 
 app.use(expressLayouts);
 // extract style and scripts from sub pages into the layout
